@@ -16,7 +16,10 @@ int main(){
       scanf("%d %s %d - %[^\n]", &pat.day, pat.cmonth, &pat.year, pat.name);
       getchar();
       for(int i=0; i<12; i++){
-         if(strcmp(pat.cmonth, month[i]) == 0) pat.month = i+1; 
+         if(strcmp(pat.cmonth, month[i]) == 0){
+            pat.month = i+1; 
+            break;
+         }
       }
 
       pushMid(pat);
