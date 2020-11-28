@@ -100,7 +100,7 @@ void display(){
    else{
       curr = head;
       while(curr){
-         printf("%d %s %d - %s", curr->patient.day, curr->patient.cmonth, curr->patient.year, curr->patient.name);
+         printf("%d %s %d - %s\n", curr->patient.day, curr->patient.cmonth, curr->patient.year, curr->patient.name);
          curr = curr->next;
       }
    }
